@@ -1,4 +1,3 @@
-
 import express from "express";
 import cors from "cors";
 import urlRoutes from "../routes/url.routes.js";
@@ -6,9 +5,7 @@ import urlModel from "../models/url.model.js";
 
 const app = express();
 
-app.use(cors({
-    origin: "http://localhost:5173"
-}));
+app.use(cors());
 
 app.use(express.json());
 
